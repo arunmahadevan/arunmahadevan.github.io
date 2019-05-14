@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: upload
+  labels:
+    app: upload
+spec:
+  containers:
+  - name: upload-container
+    image: arunmahadevan/upload-optimized
+    #command: ["./upload"]
+    #args: ["/dags"]
+    volumeMounts:
+    - mountPath: /dags
+      name: dags-data
+  restartPolicy: OnFailure
+  volumes:
+  - name: dags-data
+    persistentVolumeClaim:
+      claimName: task-pv-claim

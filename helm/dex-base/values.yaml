@@ -1,0 +1,14 @@
+# Default values for spark-services.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+
+efs:
+  id: "fs-12345"
+  dns: "example.com"
+  region: "us-east-1"
+
+ca:
+  scaleDownUnneededTime: "2m"
+  scaleDownDelayAfterAdd: "2m"
+  asgName: "1:10:example-group"

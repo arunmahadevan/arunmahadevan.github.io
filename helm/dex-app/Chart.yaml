@@ -1,0 +1,9 @@
+apiVersion: v1
+appVersion: 2.4.2
+description: A Helm chart for Spark cluster with Livy atop Kubernetes
+keywords:
+- livy
+- spark
+- history-server
+name: dex-app
+version: 0.2.0

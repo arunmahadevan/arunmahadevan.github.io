@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: download
+  labels:
+    app: download
+spec:
+  containers:
+  - name: download-container
+    image: arunmahadevan/download
+    command: ["/bin/download"]
+    args: ["$(GITHUB_USER)", "$(GITHUB_TOKEN)", "$(GITHUB_URL)", "$(GITHUB_PATH)", "$(LOCAL_PATH)"]
+    envFrom:
+    - configMapRef:
+        name: download-config
+  restartPolicy: OnFailure

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  GITHUB_USER: arunmahadevan
+  GITHUB_TOKEN: dummy
+  GITHUB_URL: https://github.com/arunmahadevan/airflow-test/
+  GITHUB_PATH: jars
+  LOCAL_PATH: /tmp/jars
+metadata:
+  name: download-config

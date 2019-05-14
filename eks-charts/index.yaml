@@ -1,0 +1,72 @@
+apiVersion: v1
+entries:
+  airflow-test:
+  - apiVersion: v1
+    appVersion: 1.10.2
+    created: 2019-08-05T01:24:21.912523-07:00
+    description: Airflow is a platform to programmatically author, schedule and monitor
+      workflows
+    digest: 2a2021a52094099aa022b846653dd0653bd17304ad9ef7f631157cf9e66ff88e
+    home: https://airflow.apache.org/
+    icon: https://airflow.apache.org/_images/pin_large.png
+    keywords:
+    - workflow
+    - dag
+    name: airflow-test
+    sources:
+    - https://airflow.apache.org/
+    urls:
+    - https://arunmahadevan.github.io/eks-charts/airflow-test-2.8.8.tgz
+    version: 2.8.8
+  dex-app:
+  - apiVersion: v1
+    appVersion: 2.4.2
+    created: 2019-08-05T01:24:21.918232-07:00
+    description: A Helm chart for Spark cluster with Livy atop Kubernetes
+    digest: db0ddabdf3461e5cbb47ab4902ca93be78e5994383d67aa92477365abde3ef2d
+    keywords:
+    - livy
+    - spark
+    - history-server
+    name: dex-app
+    urls:
+    - https://arunmahadevan.github.io/eks-charts/dex-app-0.2.0.tgz
+    version: 0.2.0
+  dex-base:
+  - apiVersion: v1
+    appVersion: 0.0.1
+    created: 2019-08-05T01:24:21.919316-07:00
+    description: Base setup for Spark cluster with Livy atop Kubernetes
+    digest: 62c94edfd0fba1643bbb901c20428ddb458aa59c938450af90f53fe16e18ae8f
+    name: dex-base
+    urls:
+    - https://arunmahadevan.github.io/eks-charts/dex-base-0.0.1.tgz
+    version: 0.0.1
+  spark-test:
+  - apiVersion: v1
+    appVersion: 2.4.2
+    created: 2019-08-05T01:24:21.923431-07:00
+    description: A Helm chart for Spark cluster with Livy atop Kubernetes
+    digest: b233477d727a5384fbe7a016061001f7767312480d70657bbf0baf083422a683
+    keywords:
+    - livy
+    - spark
+    - history-server
+    name: spark-test
+    urls:
+    - https://arunmahadevan.github.io/eks-charts/spark-test-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: 2.4.2
+    created: 2019-08-05T01:24:21.921365-07:00
+    description: A Helm chart for Spark cluster with Livy atop Kubernetes
+    digest: 0dad3e9b6af6c3e5846e10f6327162583ed0ffec77fc5248d77a5b9c8bd933da
+    keywords:
+    - livy
+    - spark
+    - history-server
+    name: spark-test
+    urls:
+    - https://arunmahadevan.github.io/eks-charts/spark-test-0.1.0.tgz
+    version: 0.1.0
+generated: 2019-08-05T01:24:21.906911-07:00
